@@ -24,7 +24,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Park List" id="6mN-uU-oX0"/>
+                    <navigationItem key="navigationItem" title="Park List" id="6mN-uU-oX0">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="zWw-LF-a1F">
+                            <connections>
+                                <action selector="addPark:" destination="BYZ-38-t0r" id="b5W-Hs-XIp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="parkListTableView" destination="tLh-r6-HV0" id="u3T-Ea-Xap"/>
                     </connections>

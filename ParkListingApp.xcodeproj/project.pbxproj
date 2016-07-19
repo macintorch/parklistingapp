@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		9E692ECA1D3DABAB00DAFCFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E692EC91D3DABAB00DAFCFF /* AppDelegate.swift */; };
-		9E692ECC1D3DABAB00DAFCFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E692ECB1D3DABAB00DAFCFF /* ViewController.swift */; };
 		9E692ECF1D3DABAB00DAFCFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E692ECD1D3DABAB00DAFCFF /* Main.storyboard */; };
 		9E692ED11D3DABAB00DAFCFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E692ED01D3DABAB00DAFCFF /* Assets.xcassets */; };
 		9E692ED41D3DABAB00DAFCFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E692ED21D3DABAB00DAFCFF /* LaunchScreen.storyboard */; };
 		9E692EDF1D3DABAB00DAFCFF /* ParkListingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E692EDE1D3DABAB00DAFCFF /* ParkListingAppTests.swift */; };
 		9E692EEA1D3DCAC100DAFCFF /* ParkListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E692EE91D3DCAC100DAFCFF /* ParkListViewController.swift */; };
 		9E692EEC1D3DE0FC00DAFCFF /* ParkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E692EEB1D3DE0FC00DAFCFF /* ParkDetailViewController.swift */; };
+		9E98DD5E1D3E39A000C95A3C /* Park.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E98DD5D1D3E39A000C95A3C /* Park.swift */; };
+		9E98DD601D3E39CB00C95A3C /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E98DD5F1D3E39CB00C95A3C /* Review.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +31,6 @@
 /* Begin PBXFileReference section */
 		9E692EC61D3DABAB00DAFCFF /* ParkListingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkListingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E692EC91D3DABAB00DAFCFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9E692ECB1D3DABAB00DAFCFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9E692ECE1D3DABAB00DAFCFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9E692ED01D3DABAB00DAFCFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E692ED31D3DABAB00DAFCFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +40,8 @@
 		9E692EE01D3DABAB00DAFCFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E692EE91D3DCAC100DAFCFF /* ParkListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkListViewController.swift; sourceTree = "<group>"; };
 		9E692EEB1D3DE0FC00DAFCFF /* ParkDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkDetailViewController.swift; sourceTree = "<group>"; };
+		9E98DD5D1D3E39A000C95A3C /* Park.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Park.swift; sourceTree = "<group>"; };
+		9E98DD5F1D3E39CB00C95A3C /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,12 +83,11 @@
 		9E692EC81D3DABAB00DAFCFF /* ParkListingApp */ = {
 			isa = PBXGroup;
 			children = (
+				9E98DD5C1D3E1FB200C95A3C /* ViewControllers */,
 				9E692EC91D3DABAB00DAFCFF /* AppDelegate.swift */,
-				9E692ECB1D3DABAB00DAFCFF /* ViewController.swift */,
 				9E692ECD1D3DABAB00DAFCFF /* Main.storyboard */,
-				9E692EEB1D3DE0FC00DAFCFF /* ParkDetailViewController.swift */,
-				9E692EE91D3DCAC100DAFCFF /* ParkListViewController.swift */,
 				9E692ED01D3DABAB00DAFCFF /* Assets.xcassets */,
+				9E98DD5B1D3E1F7000C95A3C /* Model */,
 				9E692ED21D3DABAB00DAFCFF /* LaunchScreen.storyboard */,
 				9E692ED51D3DABAB00DAFCFF /* Info.plist */,
 			);
@@ -100,6 +101,24 @@
 				9E692EE01D3DABAB00DAFCFF /* Info.plist */,
 			);
 			path = ParkListingAppTests;
+			sourceTree = "<group>";
+		};
+		9E98DD5B1D3E1F7000C95A3C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9E98DD5D1D3E39A000C95A3C /* Park.swift */,
+				9E98DD5F1D3E39CB00C95A3C /* Review.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9E98DD5C1D3E1FB200C95A3C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9E692EE91D3DCAC100DAFCFF /* ParkListViewController.swift */,
+				9E692EEB1D3DE0FC00DAFCFF /* ParkDetailViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,10 +222,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E98DD601D3E39CB00C95A3C /* Review.swift in Sources */,
 				9E692EEA1D3DCAC100DAFCFF /* ParkListViewController.swift in Sources */,
 				9E692EEC1D3DE0FC00DAFCFF /* ParkDetailViewController.swift in Sources */,
-				9E692ECC1D3DABAB00DAFCFF /* ViewController.swift in Sources */,
 				9E692ECA1D3DABAB00DAFCFF /* AppDelegate.swift in Sources */,
+				9E98DD5E1D3E39A000C95A3C /* Park.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +418,7 @@
 				9E692EE51D3DABAB00DAFCFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9E692EE61D3DABAB00DAFCFF /* Build configuration list for PBXNativeTarget "ParkListingAppTests" */ = {
 			isa = XCConfigurationList;
@@ -406,6 +427,7 @@
 				9E692EE81D3DABAB00DAFCFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
