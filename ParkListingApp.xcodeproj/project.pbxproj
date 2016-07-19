@@ -14,6 +14,7 @@
 		9E692ED41D3DABAB00DAFCFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E692ED21D3DABAB00DAFCFF /* LaunchScreen.storyboard */; };
 		9E692EDF1D3DABAB00DAFCFF /* ParkListingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E692EDE1D3DABAB00DAFCFF /* ParkListingAppTests.swift */; };
 		9E692EEA1D3DCAC100DAFCFF /* ParkListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E692EE91D3DCAC100DAFCFF /* ParkListViewController.swift */; };
+		9E692EEC1D3DE0FC00DAFCFF /* ParkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E692EEB1D3DE0FC00DAFCFF /* ParkDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		9E692EDE1D3DABAB00DAFCFF /* ParkListingAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkListingAppTests.swift; sourceTree = "<group>"; };
 		9E692EE01D3DABAB00DAFCFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E692EE91D3DCAC100DAFCFF /* ParkListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkListViewController.swift; sourceTree = "<group>"; };
+		9E692EEB1D3DE0FC00DAFCFF /* ParkDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				9E692EC91D3DABAB00DAFCFF /* AppDelegate.swift */,
 				9E692ECB1D3DABAB00DAFCFF /* ViewController.swift */,
 				9E692ECD1D3DABAB00DAFCFF /* Main.storyboard */,
+				9E692EEB1D3DE0FC00DAFCFF /* ParkDetailViewController.swift */,
 				9E692EE91D3DCAC100DAFCFF /* ParkListViewController.swift */,
 				9E692ED01D3DABAB00DAFCFF /* Assets.xcassets */,
 				9E692ED21D3DABAB00DAFCFF /* LaunchScreen.storyboard */,
@@ -201,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E692EEA1D3DCAC100DAFCFF /* ParkListViewController.swift in Sources */,
+				9E692EEC1D3DE0FC00DAFCFF /* ParkDetailViewController.swift in Sources */,
 				9E692ECC1D3DABAB00DAFCFF /* ViewController.swift in Sources */,
 				9E692ECA1D3DABAB00DAFCFF /* AppDelegate.swift in Sources */,
 			);

@@ -1,5 +1,5 @@
 //
-//  ParkListViewController.swift
+//  ParkDetailViewController.swift
 //  ParkListingApp
 //
 //  Created by Ainor Syahrizal on 19/07/2016.
@@ -8,9 +8,12 @@
 
 import UIKit
 
-class ParkListViewController: UIViewController {
+class ParkDetailViewController: UIViewController {
 
-    @IBOutlet weak var parkListTableView: UITableView!
+    @IBOutlet weak var imagePark: UIImageView!
+    @IBOutlet weak var parkNameLabel: UILabel!
+    @IBOutlet weak var parkRatingLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
