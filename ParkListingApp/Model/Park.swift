@@ -17,10 +17,15 @@ class Park {
     var location: String?
     var reviews: [Review] = []
     
-    init(name: String) {
+    init?(name: String) {
         self.name = name
-        
+        if name.isEmpty {
+            return nil
+        }
+
     }
+    
+    // average rating logic
     
     func averageRating() -> Double {
         

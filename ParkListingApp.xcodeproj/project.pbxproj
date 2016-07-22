@@ -83,11 +83,11 @@
 		9E692EC81D3DABAB00DAFCFF /* ParkListingApp */ = {
 			isa = PBXGroup;
 			children = (
-				9E98DD5C1D3E1FB200C95A3C /* ViewControllers */,
 				9E692EC91D3DABAB00DAFCFF /* AppDelegate.swift */,
 				9E692ECD1D3DABAB00DAFCFF /* Main.storyboard */,
-				9E692ED01D3DABAB00DAFCFF /* Assets.xcassets */,
 				9E98DD5B1D3E1F7000C95A3C /* Model */,
+				9E98DD5C1D3E1FB200C95A3C /* ViewControllers */,
+				9E692ED01D3DABAB00DAFCFF /* Assets.xcassets */,
 				9E692ED21D3DABAB00DAFCFF /* LaunchScreen.storyboard */,
 				9E692ED51D3DABAB00DAFCFF /* Info.plist */,
 			);
