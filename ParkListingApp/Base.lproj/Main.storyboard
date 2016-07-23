@@ -20,6 +20,10 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tLh-r6-HV0">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="WNM-Bb-F6d"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="2Eq-Fz-rBC"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -42,7 +46,7 @@
         <!--Park Detail View Controller-->
         <scene sceneID="kiT-ep-uWb">
             <objects>
-                <viewController id="Wr3-Pu-zzl" customClass="ParkDetailViewController" customModule="ParkListingApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ParkDetailViewController" id="Wr3-Pu-zzl" customClass="ParkDetailViewController" customModule="ParkListingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="l1M-W7-iiy"/>
                         <viewControllerLayoutGuide type="bottom" id="4j3-PL-IiA"/>
