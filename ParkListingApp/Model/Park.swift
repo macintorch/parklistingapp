@@ -40,4 +40,17 @@ class Park {
         return average / Double(reviews.count)
     }
     
+    class func createRandomPark() -> Park {
+        
+        let dataset: [String] = ["Amazing Park", "Green Park", "Narmada Park", "Rose Park", "Tunnel Park"]
+        let index: Int = Int(arc4random_uniform(UInt32(dataset.count)))
+        let randomName: String = dataset[index]
+        
+        let park: Park = Park(name: randomName)!
+        park.image = UIImage(named: randomName)
+        
+        return park
+    }
+
+    
 }

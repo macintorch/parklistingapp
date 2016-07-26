@@ -21,6 +21,15 @@ class ParkListViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    func preLoadData() {
+        for (var i = 0; i < 20; i++) {
+            let park: Park = Park.createRandomPark()
+            self.parks.append(park)
+        }
+        
+        self.tableView.reloadData()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -50,10 +59,9 @@ class ParkListViewController: UIViewController {
     
     @IBAction func addPark(sender: AnyObject) {
         //add random park from an array of parks
-        let randomName = randomParkName()
         
-        let park: Park = Park(name: randomName)!
-        park.image = UIImage(named: randomName)
+        
+        let park: Park = Park.createRandomPark()
         
         self.parks.append(park)
         
