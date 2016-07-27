@@ -81,12 +81,11 @@ extension ParkListViewController: UITableViewDataSource {
     // must 2) set number of cell
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = UITableViewCell(style: .Subtitle, reuseIdentifier: "Cell")
+        let cell: ParkCell = self.tableView.dequeueReusableCellWithIdentifier("ParkCell", forIndexPath: indexPath) as! ParkCell
         
         let park: Park = self.parks[indexPath.row]
         
-        cell.textLabel?.text = park.name
-        cell.imageView?.image = park.image
+        cell.park = park
         
         return cell
     }
