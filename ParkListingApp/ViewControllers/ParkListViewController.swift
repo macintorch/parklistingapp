@@ -20,6 +20,7 @@ class ParkListViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.preLoadData()
     }
     
     func preLoadData() {
@@ -48,12 +49,7 @@ class ParkListViewController: UIViewController {
     */
     
     // randomParkName function
-    func randomParkName() -> String {
-        
-        let dataset: [String] = ["Amazing Park", "Green Park", "Narmada Park", "Rose Park", "Tunnel Park"]
-        let index: Int = Int(arc4random_uniform(UInt32(dataset.count)))
-        return dataset[index]
-    }
+    
     
 
     
