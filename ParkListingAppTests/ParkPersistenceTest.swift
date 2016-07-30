@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import ParkListingApp
 
 class ParkPersistenceTest: XCTestCase {
 
@@ -25,6 +26,23 @@ class ParkPersistenceTest: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
+    }
+    
+    func testSavingPark() {
+        let defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
+        
+        let park: Park = Park.createRandomPark()
+        let parkData: NSData = NSKeyedArchiver.archivedDataWithRootObject(park)
+        defaults.setObject(parkData, forKey: "testParkData")
+        defaults.synchronize()
+        
+        let readParkData: NSData = defaults.objectForKey("testParkData") as! NSData
+        let readPark: Park? = NSKeyedUnarchiver.unarchiveObjectWithData(readParkData) as? Park
+        
+        XCTAssertNotNil(readPark,"Should be able to read park data from default and return and object ")
+        
+        XCTAssertEqual(park.name, readPark!.name, "Names from park and recreated park should match")
+        
     }
 
     func testReadingArray() {
