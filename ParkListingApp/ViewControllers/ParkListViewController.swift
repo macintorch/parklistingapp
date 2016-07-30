@@ -107,14 +107,14 @@ extension ParkListViewController: UITableViewDelegate {
     // must have didSelectRowAtIndexPath
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        // do something
+        // pass data forward using code
         
-        /* let detailsVC: ParkDetailViewController = self.storyboard?.instantiateViewControllerWithIdentifier("ParkDetailViewController") as! ParkDetailViewController
+         let detailsVC: ParkDetailViewController = self.storyboard?.instantiateViewControllerWithIdentifier("ParkDetailViewController") as! ParkDetailViewController
         
         let park: Park = self.parks[indexPath.row]
         detailsVC.park = park
         
         self.navigationController?.pushViewController(detailsVC, animated: true)
-        */
+        
     }
 }
