@@ -11,14 +11,20 @@ import Foundation
 import UIKit
 
 
-class Park {
+class Park: NSObject, NSCoding{
     var name: String?
     var image: UIImage?
     var location: String?
     var reviews: [Review] = []
     
+    func encodeWithCoder(aCoder: NSCoder) {
+        <#code#>
+    }
+    
     init?(name: String) {
         self.name = name
+        self.reviews = []
+        super.init()
         if name.isEmpty {
             return nil
         }
