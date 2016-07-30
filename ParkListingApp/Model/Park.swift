@@ -18,7 +18,29 @@ class Park: NSObject, NSCoding{
     var reviews: [Review] = []
     
     func encodeWithCoder(aCoder: NSCoder) {
-        <#code#>
+        let keyedArchiver: NSKeyedArchiver = aCoder as! NSKeyedArchiver
+        
+        keyedArchiver.encodeObject(self.name, forKey: "PLDParkName")
+        keyedArchiver.encodeObject(self.name, forKey: "PLDParkLocation")
+        
+        if self.image != nil {
+            let imageData: NSData? = UIImagePNGRepresentation(self.image!)
+            keyedArchiver.encodeObject( imageData, forKey: "PLDParkPhotoData")
+        }
+    }
+    
+    required convenience init?(coder aDecoder: NSCoder) {
+        let keyedUnarchiver: NSKeyedUnarchiver = aDecoder as! NSKeyedUnarchiver
+        
+        let name: String = keyedUnarchiver.decodeObjectForKey("PLDParkName") as! String
+        self.init(name: name)
+        
+        self.location = keyedUnarchiver.decodeObjectForKey("PLDParkLocation") as? String
+        
+        if let imageData = keyedUnarchiver.decodeObjectForKey("PLDParkPhotoData") as? NSData {
+            self.image = UIImage(data: imageData)
+        }
+        self.reviews = []
     }
     
     init?(name: String) {
