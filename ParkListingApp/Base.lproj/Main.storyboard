@@ -57,6 +57,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="zWw-LF-a1F">
                             <connections>
                                 <action selector="addPark:" destination="BYZ-38-t0r" id="b5W-Hs-XIp"/>
+                                <segue destination="dV3-IN-wmG" kind="presentation" id="gNe-M1-mgd"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -107,6 +108,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TJ8-VU-xlz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-400" y="728"/>
+        </scene>
+        <!--Add Park View Controller-->
+        <scene sceneID="2qO-bI-2i7">
+            <objects>
+                <viewController id="dV3-IN-wmG" customClass="AddParkViewController" customModule="ParkListingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hvk-hE-daO"/>
+                        <viewControllerLayoutGuide type="bottom" id="bVI-Lx-Jhw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gl2-Lu-MbZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2F6-rl-GZl">
+                                <rect key="frame" x="20" y="72" width="175" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7Y-M7-AZr">
+                                <rect key="frame" x="213" y="72" width="46" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <segue destination="twR-52-2vN" kind="unwind" identifier="unwindToParkListViewController" unwindAction="unwindToParkListViewController:" id="dP4-Ag-Gl8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXj-rx-xD2">
+                                <rect key="frame" x="267" y="72" width="48" height="30"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancel:" destination="dV3-IN-wmG" eventType="touchUpInside" id="B4U-WV-cEX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="uXj-rx-xD2" id="LJh-hz-9hN"/>
+                        <outlet property="nameTextField" destination="2F6-rl-GZl" id="llG-Vf-9CU"/>
+                        <outlet property="saveButton" destination="h7Y-M7-AZr" id="vQe-HC-tph"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nDf-Fq-F7R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="twR-52-2vN" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-626" y="1419"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XaK-bx-TqE">

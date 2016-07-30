@@ -24,7 +24,7 @@ class ParkListViewController: UIViewController {
     }
     
     func preLoadData() {
-        for (var i = 0; i < 20; i++) {
+        for (var i = 0; i < 3; i++) {
             let park: Park = Park.createRandomPark()
             self.parks.append(park)
         }
@@ -55,6 +55,16 @@ class ParkListViewController: UIViewController {
             if let selectedIndexPath = self.tableView.indexPathForSelectedRow {
                 let park: Park = self.parks[selectedIndexPath.row]
                 destVC.park = park
+            }
+        }
+        
+    }
+    
+    @IBAction func unwindToParkListViewController(segue: UIStoryboardSegue) {
+        if let addParkVC: AddParkViewController = segue.sourceViewController as? AddParkViewController {
+            if let park = addParkVC.park {
+                self.parks.append(park)
+                self.tableView.reloadData()
             }
         }
     }
