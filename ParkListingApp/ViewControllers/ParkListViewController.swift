@@ -48,7 +48,16 @@ class ParkListViewController: UIViewController {
     }
     */
     
-    // randomParkName function
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showParkDetailViewController" {
+            let destVC: ParkDetailViewController = segue.destinationViewController as! ParkDetailViewController
+            
+            if let selectedIndexPath = self.tableView.indexPathForSelectedRow {
+                let park: Park = self.parks[selectedIndexPath.row]
+                destVC.park = park
+            }
+        }
+    }
     
     
 
@@ -100,12 +109,12 @@ extension ParkListViewController: UITableViewDelegate {
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         // do something
         
-        let detailsVC: ParkDetailViewController = self.storyboard?.instantiateViewControllerWithIdentifier("ParkDetailViewController") as! ParkDetailViewController
+        /* let detailsVC: ParkDetailViewController = self.storyboard?.instantiateViewControllerWithIdentifier("ParkDetailViewController") as! ParkDetailViewController
         
         let park: Park = self.parks[indexPath.row]
         detailsVC.park = park
         
         self.navigationController?.pushViewController(detailsVC, animated: true)
-        
+        */
     }
 }

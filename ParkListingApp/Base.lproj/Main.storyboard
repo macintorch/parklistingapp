@@ -42,6 +42,7 @@
                                         <connections>
                                             <outlet property="nameLabel" destination="OiM-D9-bwo" id="aTA-wd-2pt"/>
                                             <outlet property="photoImageView" destination="689-q4-jiy" id="bLi-u7-Cv4"/>
+                                            <segue destination="Wr3-Pu-zzl" kind="show" identifier="showParkDetailViewController" id="Tc0-Jz-bAr"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
