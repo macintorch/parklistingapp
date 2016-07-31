@@ -28,6 +28,50 @@ class ParkPersistenceTest: XCTestCase {
         super.tearDown()
     }
     
+    func testWritingToFile() {
+        let fileManager: NSFileManager = NSFileManager.defaultManager()
+        let documentDirectory: NSURL = fileManager.URLsForDirectory(NSSearchPathDirectory.DocumentDirectory, inDomains: NSSearchPathDomainMask.UserDomainMask).first!
+        
+        let filePath: NSURL = documentDirectory.URLByAppendingPathComponent("data.plist")
+        
+        var parks: [Park] = []
+        parks.append(Park.createRandomPark())
+        parks.append(Park.createRandomPark())
+        parks.append(Park.createRandomPark())
+        
+        var parksData: [NSData] = []
+        for park in parks {
+            let data: NSData = NSKeyedArchiver.archivedDataWithRootObject(park)
+            parksData.append(data)
+        }
+        
+        (parksData as NSArray).writeToURL(filePath, atomically: true)
+        
+        var fileExists: Bool = fileManager.fileExistsAtPath(filePath.path!)
+        XCTAssert(fileExists, "File should exists after write")
+        
+        NSLog("FIle path: \(filePath.path)")
+    }
+    
+    func testReadingFromFile() {
+        let fileManager: NSFileManager = NSFileManager.defaultManager()
+        let documentDirectory: NSURL = fileManager.URLsForDirectory(NSSearchPathDirectory.DocumentDirectory, inDomains: NSSearchPathDomainMask.UserDomainMask).first!
+        
+        let filePath: NSURL = documentDirectory.URLByAppendingPathComponent("data.plist")
+        
+        let parkData: [NSData] = NSArray(contentsOfURL: filePath) as! [NSData]
+        
+        var parks: [Park] = []
+        
+        for data in parkData {
+            let park: Park = NSKeyedUnarchiver.unarchiveObjectWithData(data) as! Park
+            parks.append(park)
+        }
+        
+        XCTAssert(parks.count == 3, "Should have loaded 3 parks from file")
+    }
+    
+    
     func testSavingPark() {
         let defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
         

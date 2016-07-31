@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E2D84931D4DDCD400C1C4BC /* ParkLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2D84921D4DDCD400C1C4BC /* ParkLoader.swift */; };
 		9E4100AF1D4C991400A95360 /* ParkPersistenceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4100AE1D4C991400A95360 /* ParkPersistenceTest.swift */; };
 		9E4DAB7A1D4C650600C4A8F7 /* AddParkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4DAB791D4C650600C4A8F7 /* AddParkViewController.swift */; };
 		9E692ECA1D3DABAB00DAFCFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E692EC91D3DABAB00DAFCFF /* AppDelegate.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9E2D84921D4DDCD400C1C4BC /* ParkLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkLoader.swift; sourceTree = "<group>"; };
 		9E4100AE1D4C991400A95360 /* ParkPersistenceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkPersistenceTest.swift; sourceTree = "<group>"; };
 		9E4DAB791D4C650600C4A8F7 /* AddParkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddParkViewController.swift; sourceTree = "<group>"; };
 		9E692EC61D3DABAB00DAFCFF /* ParkListingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkListingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +70,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E2D84911D4DDBE200C1C4BC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9E2D84921D4DDCD400C1C4BC /* ParkLoader.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		9E692EBD1D3DABAB00DAFCFF = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +101,7 @@
 			children = (
 				9E692EC91D3DABAB00DAFCFF /* AppDelegate.swift */,
 				9E692ECD1D3DABAB00DAFCFF /* Main.storyboard */,
+				9E2D84911D4DDBE200C1C4BC /* Controllers */,
 				9E98DD5B1D3E1F7000C95A3C /* Model */,
 				9E98DD5C1D3E1FB200C95A3C /* ViewControllers */,
 				9E692ED01D3DABAB00DAFCFF /* Assets.xcassets */,
@@ -231,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E2D84931D4DDCD400C1C4BC /* ParkLoader.swift in Sources */,
 				9E98DD601D3E39CB00C95A3C /* Review.swift in Sources */,
 				9E4DAB7A1D4C650600C4A8F7 /* AddParkViewController.swift in Sources */,
 				9E692EEA1D3DCAC100DAFCFF /* ParkListViewController.swift in Sources */,
