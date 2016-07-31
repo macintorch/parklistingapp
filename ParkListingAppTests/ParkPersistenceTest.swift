@@ -47,6 +47,8 @@ class ParkPersistenceTest: XCTestCase {
         
         (parksData as NSArray).writeToURL(filePath, atomically: true)
         
+        // to check the file exists
+        
         var fileExists: Bool = fileManager.fileExistsAtPath(filePath.path!)
         XCTAssert(fileExists, "File should exists after write")
         

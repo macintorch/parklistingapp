@@ -19,11 +19,37 @@ class ParkLoader {
     }
     
     // Manage data files
-    func readParksFromFile() -> [Park] {
-        return []
+    
+    let fileManager: NSFileManager = NSFileManager.defaultManager()
+    
+    func dataFileURL() -> NSURL {
+        let documentDirectory: NSURL = fileManager.URLsForDirectory(NSSearchPathDirectory.DocumentDirectory, inDomains: NSSearchPathDomainMask.UserDomainMask).first!
+        
+        let filePath: NSURL = documentDirectory.URLByAppendingPathComponent("data.plist")
+        
+        return filePath
     }
     
-    func saveParksToFile(park: [Park]) {
+    
+    func readParksFromFile() -> [Park] {
+        let parkData: [NSData] = NSArray(contentsOfURL: self.dataFileURL()) as! [NSData]
         
+        var parks: [Park] = []
+        
+        for data in parkData {
+            let park: Park = NSKeyedUnarchiver.unarchiveObjectWithData(data) as! Park
+            parks.append(park)
+        }
+        return parks
+    }
+    
+    func saveParksToFile(parks: [Park]) {
+        
+        var parksData: [NSData] = []
+        for park in parks {
+            let data: NSData = NSKeyedArchiver.archivedDataWithRootObject(park)
+            parksData.append(data)
+        }
+        (parksData as NSArray).writeToURL(self.dataFileURL(), atomically: true)
     }
 }
