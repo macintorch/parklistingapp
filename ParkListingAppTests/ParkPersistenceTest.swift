@@ -32,8 +32,7 @@ class ParkPersistenceTest: XCTestCase {
         
         var parks: [Park] = []
         parks.append(Park.createRandomPark())
-        parks.append(Park.createRandomPark())
-        parks.append(Park.createRandomPark())
+       
         
         ParkLoader.sharedLoader.saveParksToFile(parks)
         
