@@ -17,4 +17,13 @@ class ParkLoader {
     private init() {
       
     }
+    
+    // Manage data files
+    func readParksFromFile() -> [Park] {
+        return []
+    }
+    
+    func saveParksToFile(park: [Park]) {
+        
+    }
 }
