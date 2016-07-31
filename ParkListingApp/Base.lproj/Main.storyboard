@@ -127,18 +127,26 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7Y-M7-AZr">
-                                <rect key="frame" x="213" y="72" width="46" height="30"/>
-                                <state key="normal" title="Save"/>
+                                <rect key="frame" x="20" y="122" width="151" height="30"/>
+                                <state key="normal" title="Save using Unwinding"/>
                                 <connections>
                                     <segue destination="twR-52-2vN" kind="unwind" identifier="unwindToParkListViewController" unwindAction="unwindToParkListViewController:" id="dP4-Ag-Gl8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXj-rx-xD2">
-                                <rect key="frame" x="267" y="72" width="48" height="30"/>
+                                <rect key="frame" x="203" y="72" width="48" height="30"/>
                                 <state key="normal" title="Cancel"/>
                                 <connections>
                                     <action selector="cancel:" destination="dV3-IN-wmG" eventType="touchUpInside" id="B4U-WV-cEX"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EdE-36-bC1">
+                                <rect key="frame" x="20" y="160" width="152" height="30"/>
+                                <state key="normal" title="Save using Delegation"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAD-pG-6LS">
+                                <rect key="frame" x="20" y="198" width="124" height="30"/>
+                                <state key="normal" title="Save using Blocks"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
