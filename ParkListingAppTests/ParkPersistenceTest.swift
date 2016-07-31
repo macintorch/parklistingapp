@@ -29,27 +29,17 @@ class ParkPersistenceTest: XCTestCase {
     }
     
     func testWritingToFile() {
-        let fileManager: NSFileManager = NSFileManager.defaultManager()
-        let documentDirectory: NSURL = fileManager.URLsForDirectory(NSSearchPathDirectory.DocumentDirectory, inDomains: NSSearchPathDomainMask.UserDomainMask).first!
-        
-        let filePath: NSURL = documentDirectory.URLByAppendingPathComponent("data.plist")
         
         var parks: [Park] = []
         parks.append(Park.createRandomPark())
         parks.append(Park.createRandomPark())
         parks.append(Park.createRandomPark())
         
-        var parksData: [NSData] = []
-        for park in parks {
-            let data: NSData = NSKeyedArchiver.archivedDataWithRootObject(park)
-            parksData.append(data)
-        }
-        
-        (parksData as NSArray).writeToURL(filePath, atomically: true)
+        ParkLoader.sharedLoader.saveParksToFile(parks)
         
         // to check the file exists
-        
-        var fileExists: Bool = fileManager.fileExistsAtPath(filePath.path!)
+        let filePath: NSURL = ParkLoader.sharedLoader.dataFileURL()
+        let fileExists: Bool = NSFileManager.defaultManager().fileExistsAtPath(filePath.path!)
         XCTAssert(fileExists, "File should exists after write")
         
         NSLog("FIle path: \(filePath.path)")
