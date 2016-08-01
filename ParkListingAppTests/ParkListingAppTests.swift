@@ -21,6 +21,29 @@ class ParkListingAppTests: XCTestCase {
         super.tearDown()
     }
     
+    func testLoadingHompage() {
+        
+        let expectation = self.expectationWithDescription("Load Task")
+        
+        let session: NSURLSession = NSURLSession.sharedSession()
+        let url: NSURL = NSURL(string: "http://apple.com")!
+        
+        let loadTask: NSURLSessionDataTask = session.dataTaskWithURL(url) {
+            (data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
+            //code
+        let htmlString: String? = String(data: data!, encoding: NSUTF8StringEncoding)
+        XCTAssert(htmlString != nil, "Should have received some html String from server")
+            
+            NSLog("task completed")
+            
+            expectation.fulfill()
+        }
+        
+        loadTask.resume()
+        
+        self.waitForExpectationsWithTimeout(10, handler: nil)
+    }
+    
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
