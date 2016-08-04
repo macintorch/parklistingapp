@@ -53,6 +53,14 @@ class ParkListingAppTests: XCTestCase {
     }
     
     func testLoadingAPI() {
+        
+        // need a RUL
+        
+        // need to load the url
+        
+        // need to check results
+        
+        
         let expectation = self.expectationWithDescription("Load Task")
         
         let config: NSURLSessionConfiguration = NSURLSessionConfiguration.defaultSessionConfiguration()
@@ -89,9 +97,13 @@ class ParkListingAppTests: XCTestCase {
             XCTAssert(httpCode == 200, "Server should have returned 200 content OK")
             
             var parks: [Park] = []
+            // a dictionary [<key>: <value>]
             let json : [String : AnyObject] = try! NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions(rawValue: 0)) as! [String : AnyObject]
+            // read the data Array from the returned json
             
-             if let resultsArray: [ [String : AnyObject]] = json["results"] as? [ [String : AnyObject]] {
+             if let resultsArray: [ [String : AnyObject] ] = json["results"] as? [ [String : AnyObject]] {
+                
+                // go through each jason
                 for jsonData in resultsArray {
                     
                     let name: String = jsonData["name"] as! String
