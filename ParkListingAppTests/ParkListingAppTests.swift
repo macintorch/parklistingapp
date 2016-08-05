@@ -82,6 +82,102 @@ class ParkListingAppTests: XCTestCase {
         self.waitForExpectationsWithTimeout(10, handler: nil)
     }
     
+    func createDataTaskForPark(park: Park, filename: String, expectation: XCTestExpectation) -> NSURLSessionDataTask {
+        let url: NSURL = NSURL(string: "https://api.parse.com/1/classes/Park")!
+        
+        let urlRequest: NSMutableURLRequest = NSMutableURLRequest(URL: url)
+        
+        urlRequest.HTTPMethod = "POST"
+        
+        
+        
+        
+        let jsonDict: [String : AnyObject] = [
+            "name": park.name!,
+            "location": park.location ?? NSNull(),
+            "photo": ["name": filename, "__type": "File"]
+        ]
+        
+        let jsonData: NSData = try! NSJSONSerialization.dataWithJSONObject(jsonDict, options: NSJSONWritingOptions(rawValue: 0))
+        
+        urlRequest.HTTPBody = jsonData
+        
+        let postTask: NSURLSessionDataTask = self.session.dataTaskWithRequest(urlRequest) { (data:NSData?, response: NSURLResponse?, error: NSError? ) -> Void in
+            
+            let httpCode: Int = (response as! NSHTTPURLResponse).statusCode
+            
+            XCTAssert(httpCode == 201, "Server should have returned 201 Created")
+            
+            
+            let jsonString: String? = String(data: data!, encoding: NSUTF8StringEncoding)
+            
+            NSLog("Server \(httpCode): \(jsonString!)")
+            
+            expectation.fulfill()
+        }
+        return postTask
+    }
+    
+    
+    func testCreatingImageOnServer() {
+        let imageExpectation = self.expectationWithDescription("Ceate Image")
+        let parkExpectation = self.expectationWithDescription("Ceate Park")
+        
+        let url: NSURL = NSURL(string: "https://api.parse.com/1/files/photo.jpg")!
+        
+        let urlRequest: NSMutableURLRequest = NSMutableURLRequest(URL: url)
+        
+        urlRequest.HTTPMethod = "POST"
+        urlRequest.addValue("image/jpeg", forHTTPHeaderField: "Content-Type")
+        
+        let park: Park = Park.createRandomPark()
+        let imageData: NSData = UIImageJPEGRepresentation(park.image!, 0.9)!
+        
+        //urlRequest.HTTPBody = imageData
+        
+        let uploadTask: NSURLSessionUploadTask = self.session.uploadTaskWithRequest(urlRequest, fromData: imageData) {
+            (data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
+            
+            let httpCode: Int = (response as! NSHTTPURLResponse).statusCode
+            
+            XCTAssert(httpCode == 201, "Server should have returned 201 Created")
+            
+            // grad the file ID (name) from the response json
+            
+            let jsonDict: [String: AnyObject] = try! NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions(rawValue: 0)) as! [String : AnyObject]
+            
+            let filename: String = jsonDict["name"] as! String
+            
+            // Run another data tas to update Park
+            let createTask: NSURLSessionDataTask = self.createDataTaskForPark(park, filename: filename, expectation: parkExpectation)
+            createTask.resume()
+            
+            imageExpectation.fulfill()
+        }
+        uploadTask.resume()
+        
+        self.waitForExpectationsWithTimeout(10, handler: nil)
+    }
+    
+    func testLoadingImageFromServer() {
+        let expectation = self.expectationWithDescription("Load Image")
+        
+        let url: NSURL = NSURL(string: "http://files.parsetfss.com/1359b29c-6b1f-4547-8bba-5c55514fd557/tfss-26c04bcf-5668-4131-ab0d-047f450b2f34-photo.jpg")!
+        
+        let imageTask: NSURLSessionDataTask = self.session.dataTaskWithURL(url) {
+            (imageData: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
+            
+            var image: UIImage!
+            if let imageData = imageData {
+                image = UIImage(data: imageData)
+            }
+            
+            XCTAssertNotNil(image, "image should be loaded from server")
+            expectation.fulfill()
+        }
+        imageTask.resume()
+        self.waitForExpectationsWithTimeout(10, handler: nil)
+    }
     func testCreatingParkOnServer() {
         
         let expectation = self.expectationWithDescription("Create Park")
