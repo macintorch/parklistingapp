@@ -82,6 +82,48 @@ class ParkListingAppTests: XCTestCase {
         self.waitForExpectationsWithTimeout(10, handler: nil)
     }
     
+    func testCreatingParkOnServer() {
+        
+        let expectation = self.expectationWithDescription("Create Park")
+        
+        let url: NSURL = NSURL(string: "https://api.parse.com/1/classes/Park")!
+        
+        let urlRequest: NSMutableURLRequest = NSMutableURLRequest(URL: url)
+        
+        urlRequest.HTTPMethod = "POST"
+        
+        let park: Park = Park.createRandomPark()
+        park.name = "KL Park"
+        
+        let jsonDict: [String : AnyObject] = [
+                "name": park.name!,
+                "location": park.location ?? NSNull()
+        ]
+        
+        let jsonData: NSData = try! NSJSONSerialization.dataWithJSONObject(jsonDict, options: NSJSONWritingOptions(rawValue: 0))
+        
+        urlRequest.HTTPBody = jsonData
+        
+        let postTask: NSURLSessionDataTask = self.session.dataTaskWithRequest(urlRequest) { (data:NSData?, response: NSURLResponse?, error: NSError? ) -> Void in
+            
+            let httpCode: Int = (response as! NSHTTPURLResponse).statusCode
+            
+            XCTAssert(httpCode == 201, "Server should have returned 201 Created")
+            
+            
+            let jsonString: String? = String(data: data!, encoding: NSUTF8StringEncoding)
+            
+            NSLog("Server \(httpCode): \(jsonString!)")
+            
+            expectation.fulfill()
+        }
+        
+        postTask.resume()
+        
+        
+        self.waitForExpectationsWithTimeout(10, handler: nil)
+    }
+    
     func testJSONDataFromAPI() {
         let expectation = self.expectationWithDescription("Load Task")
         
