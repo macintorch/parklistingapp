@@ -12,8 +12,16 @@ import UIKit
 
 
 class Park: NSObject, NSCoding{
+    
+    var objectId: String?
     var name: String?
+    // to store photo on device
     var image: UIImage?
+    // to store photo on server
+    var photoUrl: NSURL?
+    var photoFilename: String? {
+        get {return self.photoUrl?.pathComponents?.last}
+    }
     var location: String?
     var reviews: [Review] = []
     
@@ -81,4 +89,41 @@ class Park: NSObject, NSCoding{
     }
 
     
+}
+
+// JSON API
+extension Park {
+    convenience init? (json: [String : AnyObject]) {
+        // get vales from json dictionary
+        let name: String = json["name"] as! String
+        self.init(name: name)
+        
+        updateWithJson(json)
+    }
+    
+    func updateWithJson(json: [String : AnyObject]) {
+        if let name = json ["name"] as? String {
+            self.name = name
+        }
+        
+        if let objectId: String = json["objectId"] as? String {
+            self.objectId = objectId
+        }
+        
+        if let photoDict: [String : AnyObject] = json["photo"] as? [String : AnyObject] {
+            if let photoUrlString: String = photoDict["url"] as? String {
+                self.photoUrl = NSURL(string: photoUrlString)
+            }
+        }
+    }
+    
+    func jsonDict() -> [String: AnyObject] {
+        var jsonDict: [String : AnyObject] = ["name": self.name!,
+                                              "location": self.location ?? NSNull()]
+        
+        if let _ = self.photoUrl {
+            jsonDict["photo"] = ["name": self.photoFilename!, "__type": "File"]
+        }
+        return jsonDict
+    }
 }
