@@ -24,6 +24,9 @@ class AddParkViewController: UIViewController {
         
         if segue.identifier == "unwindToParkListViewController"{
         self.park = Park(name: self.nameTextField.text!)
+            ParkLoader.sharedLoader.saveParkOnServer(self.park!, successBlock: { (Bool, nil) in
+                
+            })
         }
     }
     

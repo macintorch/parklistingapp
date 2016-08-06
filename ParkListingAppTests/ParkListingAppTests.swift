@@ -89,9 +89,6 @@ class ParkListingAppTests: XCTestCase {
         
         urlRequest.HTTPMethod = "POST"
         
-        
-        
-        
         let jsonDict: [String : AnyObject] = [
             "name": park.name!,
             "location": park.location ?? NSNull(),
@@ -236,6 +233,7 @@ class ParkListingAppTests: XCTestCase {
             
             var parks: [Park] = []
             // a dictionary [<key>: <value>]
+            
             let json : [String : AnyObject] = try! NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions(rawValue: 0)) as! [String : AnyObject]
             // read the data Array from the returned json
             

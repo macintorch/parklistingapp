@@ -20,12 +20,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // application rootVC
         
+        
         if let navigationController: UINavigationController = window?.rootViewController as? UINavigationController {
             if let parkListVC = navigationController.viewControllers.first as? ParkListViewController {
                 self.parkListVC = parkListVC
             }
         }
-            parkListVC?.parks = ParkLoader.sharedLoader.readParksFromFile()
+        //    parkListVC?.parks = ParkLoader.sharedLoader.readParksFromFile()
         
             return true
         

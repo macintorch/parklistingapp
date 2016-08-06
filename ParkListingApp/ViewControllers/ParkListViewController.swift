@@ -18,7 +18,7 @@ class ParkListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.refreshParks()
         // Do any additional setup after loading the view.
         
     }
@@ -73,6 +73,19 @@ class ParkListViewController: UIViewController {
         self.parks.append(park)
         
         self.tableView.reloadData()
+        
+        
+    }
+    
+    func refreshParks() {
+        ParkLoader.sharedLoader.readParksFromServer { (parks, error) -> Void in
+            if let error = error {
+                
+            } else {
+                self.parks = parks
+                self.tableView.reloadData()
+            }
+        }
     }
     
 

@@ -14,6 +14,8 @@ class ParkCell: UITableViewCell {
     
     @IBOutlet weak var nameLabel: UILabel!
     
+    var loadImageTask: NSURLSessionDataTask?
+    
     var park: Park! {
         didSet {
             updateDisplay()
@@ -22,8 +24,18 @@ class ParkCell: UITableViewCell {
     
     func updateDisplay() {
         self.nameLabel.text = self.park.name
-        self.photoImageView.image = self.park.image
+        if let photo = self.park.image {
+            self.photoImageView.image = photo
+        } else if let photoURL = self.park.photoUrl {
+            self.loadImageTask?.cancel()
+        
+        
+        self.loadImageTask = ParkLoader.sharedLoader.loadImageTask(photoURL, completionBlock: { (image,error) -> Void in
+            if let image = image {
+                self.photoImageView.image = image
+            }
+        })
+            self.loadImageTask?.resume()
+        }
     }
-    
-
 }

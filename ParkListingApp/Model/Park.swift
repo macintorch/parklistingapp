@@ -99,6 +99,7 @@ extension Park {
         self.init(name: name)
         
         updateWithJson(json)
+        
     }
     
     func updateWithJson(json: [String : AnyObject]) {
@@ -116,7 +117,7 @@ extension Park {
             }
         }
     }
-    
+    /*
     func jsonDict() -> [String: AnyObject] {
         var jsonDict: [String : AnyObject] = ["name": self.name!,
                                               "location": self.location ?? NSNull()]
@@ -125,5 +126,16 @@ extension Park {
             jsonDict["photo"] = ["name": self.photoFilename!, "__type": "File"]
         }
         return jsonDict
+    } */
+    
+    func jsonDict() -> [String : AnyObject] {
+        let jsonDict: [String : AnyObject] = [
+            "name": self.name!,
+            "location": self.location ?? NSNull(),
+            "image_url": self.photoUrl?.path ?? NSNull(),
+            ]
+        
+        return jsonDict
     }
+ 
 }
