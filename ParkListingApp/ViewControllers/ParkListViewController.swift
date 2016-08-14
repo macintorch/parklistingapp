@@ -19,8 +19,8 @@ class ParkListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.refreshParks()
-        // Do any additional setup after loading the view.
         
+        // Do any additional setup after loading the view.
     }
     
     

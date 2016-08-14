@@ -1,0 +1,12 @@
+PODS:
+  - LoadingViewController (0.2.0)
+
+DEPENDENCIES:
+  - LoadingViewController
+
+SPEC CHECKSUMS:
+  LoadingViewController: 0c0a41b6ec19fb767417b16fad8c885f69342598
+
+PODFILE CHECKSUM: 88d99738fbcdbba45debd5112516196acf1ceadb
+
+COCOAPODS: 1.0.1

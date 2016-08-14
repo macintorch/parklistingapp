@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B1BA088E0C1F1319474BA80 /* Pods_ParkListingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C26C8BF267BEB5928065F087 /* Pods_ParkListingApp.framework */; };
 		9E2D84931D4DDCD400C1C4BC /* ParkLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2D84921D4DDCD400C1C4BC /* ParkLoader.swift */; };
 		9E4100AF1D4C991400A95360 /* ParkPersistenceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4100AE1D4C991400A95360 /* ParkPersistenceTest.swift */; };
 		9E4DAB7A1D4C650600C4A8F7 /* AddParkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4DAB791D4C650600C4A8F7 /* AddParkViewController.swift */; };
@@ -20,6 +21,7 @@
 		9E98DD5E1D3E39A000C95A3C /* Park.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E98DD5D1D3E39A000C95A3C /* Park.swift */; };
 		9E98DD601D3E39CB00C95A3C /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E98DD5F1D3E39CB00C95A3C /* Review.swift */; };
 		9EC6777F1D48D02F009B535C /* ParkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC6777E1D48D02F009B535C /* ParkCell.swift */; };
+		ECD7F4818E686679204FAB18 /* Pods_ParkListingAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7060A73870C6EDA84B6F29E /* Pods_ParkListingAppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7394C53CEE53768D84AEC48A /* Pods-ParkListingAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkListingAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParkListingAppTests/Pods-ParkListingAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		7BF5A2D55DC87D0FCA8BF9C2 /* Pods-ParkListingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkListingApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParkListingApp/Pods-ParkListingApp.debug.xcconfig"; sourceTree = "<group>"; };
 		9E2D84921D4DDCD400C1C4BC /* ParkLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkLoader.swift; sourceTree = "<group>"; };
 		9E4100AE1D4C991400A95360 /* ParkPersistenceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkPersistenceTest.swift; sourceTree = "<group>"; };
 		9E4DAB791D4C650600C4A8F7 /* AddParkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddParkViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +54,10 @@
 		9E98DD5D1D3E39A000C95A3C /* Park.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Park.swift; sourceTree = "<group>"; };
 		9E98DD5F1D3E39CB00C95A3C /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		9EC6777E1D48D02F009B535C /* ParkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkCell.swift; sourceTree = "<group>"; };
+		9FE75873F12FF7A99D6F4426 /* Pods-ParkListingAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkListingAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParkListingAppTests/Pods-ParkListingAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A7060A73870C6EDA84B6F29E /* Pods_ParkListingAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParkListingAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C26C8BF267BEB5928065F087 /* Pods_ParkListingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParkListingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D18A5EA354746529D66D84B4 /* Pods-ParkListingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkListingApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParkListingApp/Pods-ParkListingApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B1BA088E0C1F1319474BA80 /* Pods_ParkListingApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,12 +73,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECD7F4818E686679204FAB18 /* Pods_ParkListingAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C83BFEBEEE131D079B2B635 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7BF5A2D55DC87D0FCA8BF9C2 /* Pods-ParkListingApp.debug.xcconfig */,
+				D18A5EA354746529D66D84B4 /* Pods-ParkListingApp.release.xcconfig */,
+				9FE75873F12FF7A99D6F4426 /* Pods-ParkListingAppTests.debug.xcconfig */,
+				7394C53CEE53768D84AEC48A /* Pods-ParkListingAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9E2D84911D4DDBE200C1C4BC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +105,8 @@
 				9E692EC81D3DABAB00DAFCFF /* ParkListingApp */,
 				9E692EDD1D3DABAB00DAFCFF /* ParkListingAppTests */,
 				9E692EC71D3DABAB00DAFCFF /* Products */,
+				1C83BFEBEEE131D079B2B635 /* Pods */,
+				AEC8EB3B2BCA1A4075E4F9DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +164,15 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		AEC8EB3B2BCA1A4075E4F9DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C26C8BF267BEB5928065F087 /* Pods_ParkListingApp.framework */,
+				A7060A73870C6EDA84B6F29E /* Pods_ParkListingAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,9 +180,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E692EE31D3DABAB00DAFCFF /* Build configuration list for PBXNativeTarget "ParkListingApp" */;
 			buildPhases = (
+				12E4F0BE558B8794ECF70616 /* [CP] Check Pods Manifest.lock */,
 				9E692EC21D3DABAB00DAFCFF /* Sources */,
 				9E692EC31D3DABAB00DAFCFF /* Frameworks */,
 				9E692EC41D3DABAB00DAFCFF /* Resources */,
+				AAFE546C97E35D5A04487FDD /* [CP] Embed Pods Frameworks */,
+				AF8542623E662D0B79630D50 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -165,9 +200,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E692EE61D3DABAB00DAFCFF /* Build configuration list for PBXNativeTarget "ParkListingAppTests" */;
 			buildPhases = (
+				966B94764DB4EF3CF9EB9FF8 /* [CP] Check Pods Manifest.lock */,
 				9E692ED61D3DABAB00DAFCFF /* Sources */,
 				9E692ED71D3DABAB00DAFCFF /* Frameworks */,
 				9E692ED81D3DABAB00DAFCFF /* Resources */,
+				EBAA98F36F4B4D34B7416912 /* [CP] Embed Pods Frameworks */,
+				3C48C902174949FB4B28318D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,6 +274,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12E4F0BE558B8794ECF70616 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3C48C902174949FB4B28318D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParkListingAppTests/Pods-ParkListingAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		966B94764DB4EF3CF9EB9FF8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AAFE546C97E35D5A04487FDD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParkListingApp/Pods-ParkListingApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF8542623E662D0B79630D50 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParkListingApp/Pods-ParkListingApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBAA98F36F4B4D34B7416912 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParkListingAppTests/Pods-ParkListingAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9E692EC21D3DABAB00DAFCFF /* Sources */ = {
@@ -379,6 +510,7 @@
 		};
 		9E692EE41D3DABAB00DAFCFF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BF5A2D55DC87D0FCA8BF9C2 /* Pods-ParkListingApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ParkListingApp/Info.plist;
@@ -390,6 +522,7 @@
 		};
 		9E692EE51D3DABAB00DAFCFF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D18A5EA354746529D66D84B4 /* Pods-ParkListingApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ParkListingApp/Info.plist;
@@ -401,6 +534,7 @@
 		};
 		9E692EE71D3DABAB00DAFCFF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FE75873F12FF7A99D6F4426 /* Pods-ParkListingAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ParkListingAppTests/Info.plist;
@@ -413,6 +547,7 @@
 		};
 		9E692EE81D3DABAB00DAFCFF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7394C53CEE53768D84AEC48A /* Pods-ParkListingAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ParkListingAppTests/Info.plist;

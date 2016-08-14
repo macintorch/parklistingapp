@@ -1,0 +1,6 @@
+framework module Pods_ParkListingAppTests {
+  umbrella header "Pods-ParkListingAppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

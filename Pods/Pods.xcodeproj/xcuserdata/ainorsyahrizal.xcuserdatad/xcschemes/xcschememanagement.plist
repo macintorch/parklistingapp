@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>LoadingViewController-LoadingViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>LoadingViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-ParkListingApp.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-ParkListingAppTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>99262510A0934F33062BF333C5898D21</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A98DFAAF95505F3CA8360AA28FAC17D7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F8951EEC6E9C62E86E3B5C51AE07B915</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FFF0531EF682FFC11EA571D9CFA0A11C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

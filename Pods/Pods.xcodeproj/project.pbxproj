@@ -1,0 +1,847 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03DE71AD92DBD99DA9A66E8EBAF3C4B7 /* Pods-ParkListingApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D4E6BFD487BF43C1A8386755880E630E /* Pods-ParkListingApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0853B781A0A7AD1A21298234E89303B3 /* Pods-ParkListingApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E87C1AC37DD8F09DBC92C1A79330976A /* Pods-ParkListingApp-dummy.m */; };
+		28B72C328BDED27CD5E42891E3A35962 /* MulticolorActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B79BE6B384B961DD687865B71E13E01 /* MulticolorActivityView.swift */; };
+		3A234719FF12A1D1F5CE92A6E7093251 /* LoadingViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F26900B26EA0F8315CA95D87FB5D4424 /* LoadingViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41F8D324D6005780FCC33BEFACF6BA90 /* NoDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6D1DC60C9BAB57B7CE803E2A6B5B3E /* NoDataView.swift */; };
+		4DACEF0D351871B2AB7D57B819023B22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		512DC8FB640CBDF0634C30AD84701684 /* Pods-ParkListingAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F93207633962D6BD1087AC50229AFE6 /* Pods-ParkListingAppTests-dummy.m */; };
+		540388A40C1E56A3DD2030F609037EDE /* IndicatorLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7B292CEBF64FEFF729203464B4A2E7 /* IndicatorLoadingView.swift */; };
+		5577880EA4D28225619B31DA1041DE89 /* SimpleErrorView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 01BEE9CDEB5BD0CE5FD6D76533E75CAD /* SimpleErrorView.xib */; };
+		76E57A1AE639C594C3C165BF50BDCFFF /* SimpleErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C3BB467FCCFE5FBC879203E9265B0D /* SimpleErrorView.swift */; };
+		7F65A1B36AB93E5A7674D2C9250C8C03 /* LoadingViewController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 665EA0302469057234D063395A4B5BB6 /* LoadingViewController.bundle */; };
+		80E2B1CEDFD65B2985B499751359E423 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F3E74BDAE85FA1A3FA500E8E7D8252 /* LoadingViewController.swift */; };
+		8A97E71E9BFAF2318E5A000B4CC1E48E /* SimpleNoDataView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 0BD758115A78C323440705AD8A481198 /* SimpleNoDataView.xib */; };
+		99C16B74A98D099C7E55AA631564AD24 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CFA57C8613070ECB55EA9A15FDB2B4 /* ErrorView.swift */; };
+		9F6C48F535D6DB4F63C5071780C603F0 /* StrokeLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092455D024ABDAD2955D2FBEC7061235 /* StrokeLoadingView.swift */; };
+		A4731AF6D12AFE3FB1895D564E0AF000 /* SimpleNoDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0601556C8749C2259D153ADE8FA010E /* SimpleNoDataView.swift */; };
+		A56377C2C732B78F72FC47793D525F7B /* Pods-ParkListingAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 870AAC1D6BE29043AF54720CB48BFBF2 /* Pods-ParkListingAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6C1AC1B91ED9881DD3DFF2F95E82D2E /* LoadingViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6925DB0B840A5531267BF208A218C329 /* LoadingViewController-dummy.m */; };
+		B324DE0914C75447A5322B7C35169C7E /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD87EAFDB29ECF4CDE29EB6A752F913 /* LoadingView.swift */; };
+		BCFB3E64533798474E0312B725364D8E /* MulticolorLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1A921BCA534AF123F06671DEDA72B3 /* MulticolorLoadingView.swift */; };
+		BDA920C01A0F10A7D13A3CC7F74BBA10 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		C1C9CF0952AB3791DE8F15CBB3A5FB41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		C3DE0FFB11F488863E8EB4EDC8F74B4D /* UIView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DFBDB8AA28EDEDA469DD8382EED86B /* UIView+Nib.swift */; };
+		D168B5915C05223741553D393DC91A02 /* StrokeActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4CED7766625BF5FE8AC8AB1A2E44EB /* StrokeActivityView.swift */; };
+		F0E2D298A15FDB34A0D83C76FFB3915E /* sad.png in Resources */ = {isa = PBXBuildFile; fileRef = D1CF8327AA94E518E69DEE5EC2180258 /* sad.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27A2ED1E57C2C42DFA45E588961AC58D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99262510A0934F33062BF333C5898D21;
+			remoteInfo = "LoadingViewController-LoadingViewController";
+		};
+		34081BF23A9D9124A97A09DE6C52EFBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A98DFAAF95505F3CA8360AA28FAC17D7;
+			remoteInfo = LoadingViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01BEE9CDEB5BD0CE5FD6D76533E75CAD /* SimpleErrorView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = SimpleErrorView.xib; path = LoadingViewController/Classes/Views/ErrorViews/SimpleErrorView.xib; sourceTree = "<group>"; };
+		035A4C75FFF8D78706A9094B89BC9BA1 /* Pods-ParkListingAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ParkListingAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		07F3E74BDAE85FA1A3FA500E8E7D8252 /* LoadingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoadingViewController.swift; path = LoadingViewController/Classes/LoadingViewController.swift; sourceTree = "<group>"; };
+		092455D024ABDAD2955D2FBEC7061235 /* StrokeLoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StrokeLoadingView.swift; path = LoadingViewController/Classes/Views/LoadingViews/StrokeLoadingView.swift; sourceTree = "<group>"; };
+		0B79BE6B384B961DD687865B71E13E01 /* MulticolorActivityView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MulticolorActivityView.swift; path = LoadingViewController/Classes/Views/LoadingViews/ActivityViews/MulticolorActivityView.swift; sourceTree = "<group>"; };
+		0BD758115A78C323440705AD8A481198 /* SimpleNoDataView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = SimpleNoDataView.xib; path = LoadingViewController/Classes/Views/NoDataViews/SimpleNoDataView.xib; sourceTree = "<group>"; };
+		0CC54565F4D72F87B1E1ED4D317F98C0 /* Pods-ParkListingApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ParkListingApp-frameworks.sh"; sourceTree = "<group>"; };
+		0F7B292CEBF64FEFF729203464B4A2E7 /* IndicatorLoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IndicatorLoadingView.swift; path = LoadingViewController/Classes/Views/LoadingViews/IndicatorLoadingView.swift; sourceTree = "<group>"; };
+		0FEB55F41050C3BB2B7956700FC2A48A /* Pods-ParkListingApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ParkListingApp-resources.sh"; sourceTree = "<group>"; };
+		183A67253579AFDCB45DBD4A88429D7B /* ResourceBundle-LoadingViewController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-LoadingViewController-Info.plist"; sourceTree = "<group>"; };
+		1D4CED7766625BF5FE8AC8AB1A2E44EB /* StrokeActivityView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StrokeActivityView.swift; path = LoadingViewController/Classes/Views/LoadingViews/ActivityViews/StrokeActivityView.swift; sourceTree = "<group>"; };
+		2ADFCF851B19625707987B1F6332189C /* Pods-ParkListingAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ParkListingAppTests.modulemap"; sourceTree = "<group>"; };
+		2DD58A35F33F5960C23902595ACE9730 /* Pods-ParkListingApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ParkListingApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		37F58A3EB44C562D113EEF0C5AD5F147 /* LoadingViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LoadingViewController.xcconfig; sourceTree = "<group>"; };
+		41A08E072A8E50F32C033D58CE44044E /* Pods-ParkListingAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParkListingAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		44ACAE54252A4E46E204726F9F3CA16B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4516FB382B040605821BDF89C340E6AE /* Pods-ParkListingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParkListingApp.debug.xcconfig"; sourceTree = "<group>"; };
+		5D6D1DC60C9BAB57B7CE803E2A6B5B3E /* NoDataView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NoDataView.swift; path = LoadingViewController/Classes/Views/NoDataViews/NoDataView.swift; sourceTree = "<group>"; };
+		665EA0302469057234D063395A4B5BB6 /* LoadingViewController.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoadingViewController.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		68E475BD82E2E38E8EEA4F6C28F8F244 /* Pods-ParkListingApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ParkListingApp.modulemap"; sourceTree = "<group>"; };
+		6925DB0B840A5531267BF208A218C329 /* LoadingViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LoadingViewController-dummy.m"; sourceTree = "<group>"; };
+		72946FF52FEBD6E8711B4257F75CCD10 /* Pods-ParkListingApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ParkListingApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		76562D0D047020CC88295F697998AAEF /* Pods-ParkListingAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParkListingAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		7D1A921BCA534AF123F06671DEDA72B3 /* MulticolorLoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MulticolorLoadingView.swift; path = LoadingViewController/Classes/Views/LoadingViews/MulticolorLoadingView.swift; sourceTree = "<group>"; };
+		870AAC1D6BE29043AF54720CB48BFBF2 /* Pods-ParkListingAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ParkListingAppTests-umbrella.h"; sourceTree = "<group>"; };
+		87EF2F530D02686444CB7FC3E9ACA9A6 /* Pods_ParkListingAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParkListingAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F93207633962D6BD1087AC50229AFE6 /* Pods-ParkListingAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ParkListingAppTests-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A03D55BF470AF501654DB4632FE94874 /* LoadingViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LoadingViewController.modulemap; sourceTree = "<group>"; };
+		A0D45974106582E72AC928C0AF70012C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A82276ED8B9A364B802A4B36D5623660 /* Pods-ParkListingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ParkListingApp.release.xcconfig"; sourceTree = "<group>"; };
+		B3C3BB467FCCFE5FBC879203E9265B0D /* SimpleErrorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleErrorView.swift; path = LoadingViewController/Classes/Views/ErrorViews/SimpleErrorView.swift; sourceTree = "<group>"; };
+		B7CC993F66715D5958ED2BF11AC9DE1D /* LoadingViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LoadingViewController-prefix.pch"; sourceTree = "<group>"; };
+		C0601556C8749C2259D153ADE8FA010E /* SimpleNoDataView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleNoDataView.swift; path = LoadingViewController/Classes/Views/NoDataViews/SimpleNoDataView.swift; sourceTree = "<group>"; };
+		C0DFBDB8AA28EDEDA469DD8382EED86B /* UIView+Nib.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Nib.swift"; path = "LoadingViewController/Classes/Extensions/UIView+Nib.swift"; sourceTree = "<group>"; };
+		C78B00BCE788F571CAF1F08AF8428F06 /* Pods-ParkListingAppTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ParkListingAppTests-frameworks.sh"; sourceTree = "<group>"; };
+		CC58A975FCC236B8F10B0C91A6E0B742 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDD87EAFDB29ECF4CDE29EB6A752F913 /* LoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoadingView.swift; path = LoadingViewController/Classes/Views/LoadingViews/LoadingView.swift; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D1CF8327AA94E518E69DEE5EC2180258 /* sad.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = sad.png; path = LoadingViewController/Assets/sad.png; sourceTree = "<group>"; };
+		D4E6BFD487BF43C1A8386755880E630E /* Pods-ParkListingApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ParkListingApp-umbrella.h"; sourceTree = "<group>"; };
+		D9CFA57C8613070ECB55EA9A15FDB2B4 /* ErrorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ErrorView.swift; path = LoadingViewController/Classes/Views/ErrorViews/ErrorView.swift; sourceTree = "<group>"; };
+		DF51A989F5EB25AF0C5ABD2CE231605C /* Pods-ParkListingAppTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ParkListingAppTests-resources.sh"; sourceTree = "<group>"; };
+		E437091FD97E642431970BA37A0E2C86 /* Pods-ParkListingAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ParkListingAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E87C1AC37DD8F09DBC92C1A79330976A /* Pods-ParkListingApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ParkListingApp-dummy.m"; sourceTree = "<group>"; };
+		E8E01C4917DD74285483BBA08102F56E /* Pods_ParkListingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParkListingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F26900B26EA0F8315CA95D87FB5D4424 /* LoadingViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LoadingViewController-umbrella.h"; sourceTree = "<group>"; };
+		F6D9A5F60628199FEFED26072E736C4D /* LoadingViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LoadingViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05B854E1C7F2F102C2C4F3B341F39B9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1C9CF0952AB3791DE8F15CBB3A5FB41 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4260CD2AE539ECFBB5A86C35EAF2573F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDA920C01A0F10A7D13A3CC7F74BBA10 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FF2A8FF870946E2A3F0E208DE9D50FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DACEF0D351871B2AB7D57B819023B22 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4A959EFCA6783032784CA3F0F5C882E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31ADFAAA767B7FC7A491BF48F4316D5F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC58A975FCC236B8F10B0C91A6E0B742 /* Info.plist */,
+				A03D55BF470AF501654DB4632FE94874 /* LoadingViewController.modulemap */,
+				37F58A3EB44C562D113EEF0C5AD5F147 /* LoadingViewController.xcconfig */,
+				6925DB0B840A5531267BF208A218C329 /* LoadingViewController-dummy.m */,
+				B7CC993F66715D5958ED2BF11AC9DE1D /* LoadingViewController-prefix.pch */,
+				F26900B26EA0F8315CA95D87FB5D4424 /* LoadingViewController-umbrella.h */,
+				183A67253579AFDCB45DBD4A88429D7B /* ResourceBundle-LoadingViewController-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LoadingViewController";
+			sourceTree = "<group>";
+		};
+		39D21D8272E12058BC306F151368A6FC /* Pods-ParkListingAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A0D45974106582E72AC928C0AF70012C /* Info.plist */,
+				2ADFCF851B19625707987B1F6332189C /* Pods-ParkListingAppTests.modulemap */,
+				035A4C75FFF8D78706A9094B89BC9BA1 /* Pods-ParkListingAppTests-acknowledgements.markdown */,
+				E437091FD97E642431970BA37A0E2C86 /* Pods-ParkListingAppTests-acknowledgements.plist */,
+				8F93207633962D6BD1087AC50229AFE6 /* Pods-ParkListingAppTests-dummy.m */,
+				C78B00BCE788F571CAF1F08AF8428F06 /* Pods-ParkListingAppTests-frameworks.sh */,
+				DF51A989F5EB25AF0C5ABD2CE231605C /* Pods-ParkListingAppTests-resources.sh */,
+				870AAC1D6BE29043AF54720CB48BFBF2 /* Pods-ParkListingAppTests-umbrella.h */,
+				41A08E072A8E50F32C033D58CE44044E /* Pods-ParkListingAppTests.debug.xcconfig */,
+				76562D0D047020CC88295F697998AAEF /* Pods-ParkListingAppTests.release.xcconfig */,
+			);
+			name = "Pods-ParkListingAppTests";
+			path = "Target Support Files/Pods-ParkListingAppTests";
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				B1C21A205FA376C840F390303AC8B882 /* Pods */,
+				A431928729EED469D1112822AF57A79B /* Products */,
+				AFE26007EAD37B026587D93DE5F7397B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7F9C5A4AF29D9E3B6F1FCC2C75D1A3C2 /* Pods-ParkListingApp */ = {
+			isa = PBXGroup;
+			children = (
+				44ACAE54252A4E46E204726F9F3CA16B /* Info.plist */,
+				68E475BD82E2E38E8EEA4F6C28F8F244 /* Pods-ParkListingApp.modulemap */,
+				72946FF52FEBD6E8711B4257F75CCD10 /* Pods-ParkListingApp-acknowledgements.markdown */,
+				2DD58A35F33F5960C23902595ACE9730 /* Pods-ParkListingApp-acknowledgements.plist */,
+				E87C1AC37DD8F09DBC92C1A79330976A /* Pods-ParkListingApp-dummy.m */,
+				0CC54565F4D72F87B1E1ED4D317F98C0 /* Pods-ParkListingApp-frameworks.sh */,
+				0FEB55F41050C3BB2B7956700FC2A48A /* Pods-ParkListingApp-resources.sh */,
+				D4E6BFD487BF43C1A8386755880E630E /* Pods-ParkListingApp-umbrella.h */,
+				4516FB382B040605821BDF89C340E6AE /* Pods-ParkListingApp.debug.xcconfig */,
+				A82276ED8B9A364B802A4B36D5623660 /* Pods-ParkListingApp.release.xcconfig */,
+			);
+			name = "Pods-ParkListingApp";
+			path = "Target Support Files/Pods-ParkListingApp";
+			sourceTree = "<group>";
+		};
+		9D9695912E4226A560A25779CB3E7FB0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D1CF8327AA94E518E69DEE5EC2180258 /* sad.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A431928729EED469D1112822AF57A79B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				665EA0302469057234D063395A4B5BB6 /* LoadingViewController.bundle */,
+				F6D9A5F60628199FEFED26072E736C4D /* LoadingViewController.framework */,
+				E8E01C4917DD74285483BBA08102F56E /* Pods_ParkListingApp.framework */,
+				87EF2F530D02686444CB7FC3E9ACA9A6 /* Pods_ParkListingAppTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFE26007EAD37B026587D93DE5F7397B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F9C5A4AF29D9E3B6F1FCC2C75D1A3C2 /* Pods-ParkListingApp */,
+				39D21D8272E12058BC306F151368A6FC /* Pods-ParkListingAppTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B1C21A205FA376C840F390303AC8B882 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EDCDA6248BF2685432C394525E8E9CCD /* LoadingViewController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDCDA6248BF2685432C394525E8E9CCD /* LoadingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D9CFA57C8613070ECB55EA9A15FDB2B4 /* ErrorView.swift */,
+				0F7B292CEBF64FEFF729203464B4A2E7 /* IndicatorLoadingView.swift */,
+				CDD87EAFDB29ECF4CDE29EB6A752F913 /* LoadingView.swift */,
+				07F3E74BDAE85FA1A3FA500E8E7D8252 /* LoadingViewController.swift */,
+				0B79BE6B384B961DD687865B71E13E01 /* MulticolorActivityView.swift */,
+				7D1A921BCA534AF123F06671DEDA72B3 /* MulticolorLoadingView.swift */,
+				5D6D1DC60C9BAB57B7CE803E2A6B5B3E /* NoDataView.swift */,
+				B3C3BB467FCCFE5FBC879203E9265B0D /* SimpleErrorView.swift */,
+				01BEE9CDEB5BD0CE5FD6D76533E75CAD /* SimpleErrorView.xib */,
+				C0601556C8749C2259D153ADE8FA010E /* SimpleNoDataView.swift */,
+				0BD758115A78C323440705AD8A481198 /* SimpleNoDataView.xib */,
+				1D4CED7766625BF5FE8AC8AB1A2E44EB /* StrokeActivityView.swift */,
+				092455D024ABDAD2955D2FBEC7061235 /* StrokeLoadingView.swift */,
+				C0DFBDB8AA28EDEDA469DD8382EED86B /* UIView+Nib.swift */,
+				9D9695912E4226A560A25779CB3E7FB0 /* Resources */,
+				31ADFAAA767B7FC7A491BF48F4316D5F /* Support Files */,
+			);
+			path = LoadingViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		54DE63083255C033514773F15BF08405 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03DE71AD92DBD99DA9A66E8EBAF3C4B7 /* Pods-ParkListingApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4D5C892DD29CD7172727EC928ECA73C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A234719FF12A1D1F5CE92A6E7093251 /* LoadingViewController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D74E31CA670519BC4B56E55742AE935A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A56377C2C732B78F72FC47793D525F7B /* Pods-ParkListingAppTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		99262510A0934F33062BF333C5898D21 /* LoadingViewController-LoadingViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C87DAF1245EBB91FC80B5A2A700FD3A7 /* Build configuration list for PBXNativeTarget "LoadingViewController-LoadingViewController" */;
+			buildPhases = (
+				13ED5AC1B1EF428D44A89D29DF02180B /* Sources */,
+				D4A959EFCA6783032784CA3F0F5C882E /* Frameworks */,
+				09CB0A848733ABAFD787D8107CFC3A89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LoadingViewController-LoadingViewController";
+			productName = "LoadingViewController-LoadingViewController";
+			productReference = 665EA0302469057234D063395A4B5BB6 /* LoadingViewController.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		A98DFAAF95505F3CA8360AA28FAC17D7 /* LoadingViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35CC2256C9BFDA7FB48EE9835F283154 /* Build configuration list for PBXNativeTarget "LoadingViewController" */;
+			buildPhases = (
+				98C86D0CA2A7A9DF9DB764FE78CF5423 /* Sources */,
+				05B854E1C7F2F102C2C4F3B341F39B9F /* Frameworks */,
+				EFBF620B0EAFDBD9C90726F91FD4DFDF /* Resources */,
+				C4D5C892DD29CD7172727EC928ECA73C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A72F54E6A928336B7F016B07C1AEFD3 /* PBXTargetDependency */,
+			);
+			name = LoadingViewController;
+			productName = LoadingViewController;
+			productReference = F6D9A5F60628199FEFED26072E736C4D /* LoadingViewController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F8951EEC6E9C62E86E3B5C51AE07B915 /* Pods-ParkListingAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B32EECFAE593E8053FD6F1987B2058BD /* Build configuration list for PBXNativeTarget "Pods-ParkListingAppTests" */;
+			buildPhases = (
+				E2EFC2E19BB7464EB8A59A8B2C82E6AA /* Sources */,
+				7FF2A8FF870946E2A3F0E208DE9D50FD /* Frameworks */,
+				D74E31CA670519BC4B56E55742AE935A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-ParkListingAppTests";
+			productName = "Pods-ParkListingAppTests";
+			productReference = 87EF2F530D02686444CB7FC3E9ACA9A6 /* Pods_ParkListingAppTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FFF0531EF682FFC11EA571D9CFA0A11C /* Pods-ParkListingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E487124E89E9B87DC51189EB7F021307 /* Build configuration list for PBXNativeTarget "Pods-ParkListingApp" */;
+			buildPhases = (
+				3CA78CC514FDBCC4972A459441619165 /* Sources */,
+				4260CD2AE539ECFBB5A86C35EAF2573F /* Frameworks */,
+				54DE63083255C033514773F15BF08405 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C18575EAB358788D5385A7652D016840 /* PBXTargetDependency */,
+			);
+			name = "Pods-ParkListingApp";
+			productName = "Pods-ParkListingApp";
+			productReference = E8E01C4917DD74285483BBA08102F56E /* Pods_ParkListingApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = A431928729EED469D1112822AF57A79B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A98DFAAF95505F3CA8360AA28FAC17D7 /* LoadingViewController */,
+				99262510A0934F33062BF333C5898D21 /* LoadingViewController-LoadingViewController */,
+				FFF0531EF682FFC11EA571D9CFA0A11C /* Pods-ParkListingApp */,
+				F8951EEC6E9C62E86E3B5C51AE07B915 /* Pods-ParkListingAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09CB0A848733ABAFD787D8107CFC3A89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0E2D298A15FDB34A0D83C76FFB3915E /* sad.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFBF620B0EAFDBD9C90726F91FD4DFDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F65A1B36AB93E5A7674D2C9250C8C03 /* LoadingViewController.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13ED5AC1B1EF428D44A89D29DF02180B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CA78CC514FDBCC4972A459441619165 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0853B781A0A7AD1A21298234E89303B3 /* Pods-ParkListingApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98C86D0CA2A7A9DF9DB764FE78CF5423 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99C16B74A98D099C7E55AA631564AD24 /* ErrorView.swift in Sources */,
+				540388A40C1E56A3DD2030F609037EDE /* IndicatorLoadingView.swift in Sources */,
+				B324DE0914C75447A5322B7C35169C7E /* LoadingView.swift in Sources */,
+				A6C1AC1B91ED9881DD3DFF2F95E82D2E /* LoadingViewController-dummy.m in Sources */,
+				80E2B1CEDFD65B2985B499751359E423 /* LoadingViewController.swift in Sources */,
+				28B72C328BDED27CD5E42891E3A35962 /* MulticolorActivityView.swift in Sources */,
+				BCFB3E64533798474E0312B725364D8E /* MulticolorLoadingView.swift in Sources */,
+				41F8D324D6005780FCC33BEFACF6BA90 /* NoDataView.swift in Sources */,
+				76E57A1AE639C594C3C165BF50BDCFFF /* SimpleErrorView.swift in Sources */,
+				5577880EA4D28225619B31DA1041DE89 /* SimpleErrorView.xib in Sources */,
+				A4731AF6D12AFE3FB1895D564E0AF000 /* SimpleNoDataView.swift in Sources */,
+				8A97E71E9BFAF2318E5A000B4CC1E48E /* SimpleNoDataView.xib in Sources */,
+				D168B5915C05223741553D393DC91A02 /* StrokeActivityView.swift in Sources */,
+				9F6C48F535D6DB4F63C5071780C603F0 /* StrokeLoadingView.swift in Sources */,
+				C3DE0FFB11F488863E8EB4EDC8F74B4D /* UIView+Nib.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2EFC2E19BB7464EB8A59A8B2C82E6AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				512DC8FB640CBDF0634C30AD84701684 /* Pods-ParkListingAppTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7A72F54E6A928336B7F016B07C1AEFD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "LoadingViewController-LoadingViewController";
+			target = 99262510A0934F33062BF333C5898D21 /* LoadingViewController-LoadingViewController */;
+			targetProxy = 27A2ED1E57C2C42DFA45E588961AC58D /* PBXContainerItemProxy */;
+		};
+		C18575EAB358788D5385A7652D016840 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LoadingViewController;
+			target = A98DFAAF95505F3CA8360AA28FAC17D7 /* LoadingViewController */;
+			targetProxy = 34081BF23A9D9124A97A09DE6C52EFBD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0FEA8EF5D3014A0ACDE776F6F48EFE66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37F58A3EB44C562D113EEF0C5AD5F147 /* LoadingViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LoadingViewController/LoadingViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LoadingViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LoadingViewController/LoadingViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = LoadingViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1255E48E740A3F15DA2C4EDB539E4C91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76562D0D047020CC88295F697998AAEF /* Pods-ParkListingAppTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ParkListingAppTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ParkListingAppTests/Pods-ParkListingAppTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ParkListingAppTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3FA451D268613890FA8A5A03801E11D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		427C5F789503ED336AC9BC1BC36EB006 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41A08E072A8E50F32C033D58CE44044E /* Pods-ParkListingAppTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ParkListingAppTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ParkListingAppTests/Pods-ParkListingAppTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ParkListingAppTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		683530EFD8C4E85786EAC87BE7F02CDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37F58A3EB44C562D113EEF0C5AD5F147 /* LoadingViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LoadingViewController/LoadingViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LoadingViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LoadingViewController/LoadingViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = LoadingViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7A8DD6FB61C1D7EFDCC2070095F1AB25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37F58A3EB44C562D113EEF0C5AD5F147 /* LoadingViewController.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/LoadingViewController";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/LoadingViewController/ResourceBundle-LoadingViewController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = LoadingViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		94118529D5F5AB99E3361582D329E0CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37F58A3EB44C562D113EEF0C5AD5F147 /* LoadingViewController.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/LoadingViewController";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/LoadingViewController/ResourceBundle-LoadingViewController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = LoadingViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		D08B2D4FB9ACC3F71E0A3AAD00E7489E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4516FB382B040605821BDF89C340E6AE /* Pods-ParkListingApp.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ParkListingApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ParkListingApp/Pods-ParkListingApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ParkListingApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D46041A7C466E99EF8BDC7B24DC93067 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A82276ED8B9A364B802A4B36D5623660 /* Pods-ParkListingApp.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ParkListingApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ParkListingApp/Pods-ParkListingApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ParkListingApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */,
+				3FA451D268613890FA8A5A03801E11D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35CC2256C9BFDA7FB48EE9835F283154 /* Build configuration list for PBXNativeTarget "LoadingViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				683530EFD8C4E85786EAC87BE7F02CDF /* Debug */,
+				0FEA8EF5D3014A0ACDE776F6F48EFE66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B32EECFAE593E8053FD6F1987B2058BD /* Build configuration list for PBXNativeTarget "Pods-ParkListingAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				427C5F789503ED336AC9BC1BC36EB006 /* Debug */,
+				1255E48E740A3F15DA2C4EDB539E4C91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C87DAF1245EBB91FC80B5A2A700FD3A7 /* Build configuration list for PBXNativeTarget "LoadingViewController-LoadingViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A8DD6FB61C1D7EFDCC2070095F1AB25 /* Debug */,
+				94118529D5F5AB99E3361582D329E0CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E487124E89E9B87DC51189EB7F021307 /* Build configuration list for PBXNativeTarget "Pods-ParkListingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D08B2D4FB9ACC3F71E0A3AAD00E7489E /* Debug */,
+				D46041A7C466E99EF8BDC7B24DC93067 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
